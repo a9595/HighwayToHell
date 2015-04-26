@@ -31,13 +31,16 @@
 			this.components = new System.ComponentModel.Container();
 			this.StudentsGridView = new System.Windows.Forms.DataGridView();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.eskaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.eska = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.StudentsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
@@ -46,6 +49,10 @@
 			// StudentsGridView
 			// 
 			this.StudentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.StudentsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.eska,
+            this.surname});
 			this.StudentsGridView.Location = new System.Drawing.Point(0, 0);
 			this.StudentsGridView.Name = "StudentsGridView";
 			this.StudentsGridView.Size = new System.Drawing.Size(825, 201);
@@ -67,10 +74,6 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(825, 150);
 			this.dataGridView1.TabIndex = 1;
-			// 
-			// studentBindingSource
-			// 
-			this.studentBindingSource.DataSource = typeof(HighWayToHell.student);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -110,6 +113,28 @@
 			this.groupDataGridViewTextBoxColumn.HeaderText = "group";
 			this.groupDataGridViewTextBoxColumn.Name = "groupDataGridViewTextBoxColumn";
 			// 
+			// studentBindingSource
+			// 
+			this.studentBindingSource.DataSource = typeof(HighWayToHell.student);
+			// 
+			// name
+			// 
+			this.name.DataPropertyName = "name";
+			this.name.HeaderText = "name";
+			this.name.Name = "name";
+			// 
+			// eska
+			// 
+			this.eska.DataPropertyName = "eska";
+			this.eska.HeaderText = "eska";
+			this.eska.Name = "eska";
+			// 
+			// surname
+			// 
+			this.surname.DataPropertyName = "surname";
+			this.surname.HeaderText = "surname";
+			this.surname.Name = "surname";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,13 +155,16 @@
 
 		private System.Windows.Forms.DataGridView StudentsGridView;
 		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.BindingSource studentBindingSource;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn eskaDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn groupIdDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn groupDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource studentBindingSource;
+		private System.Windows.Forms.DataGridViewTextBoxColumn name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn eska;
+		private System.Windows.Forms.DataGridViewTextBoxColumn surname;
 	}
 }
 
