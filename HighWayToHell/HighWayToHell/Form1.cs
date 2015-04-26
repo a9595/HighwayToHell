@@ -16,7 +16,9 @@ namespace HighWayToHell
 		public Form1()
 		{
 			InitializeComponent();
+			StudentsGridView.AutoGenerateColumns = false;
 			StudentsGridView.DataSource = context.student.ToList();
+			
 		}
 	}
 }
