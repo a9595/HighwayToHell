@@ -27,6 +27,9 @@ namespace HighWayToHell
 			comboColumn.DataPropertyName = "id";
 			StudentsGridView.Columns.Add(comboColumn);
 
+			Random r = new Random();
+			int rez = r.Next(1, 100);
+			MessageBox.Show(rez.ToString());
 		}
 	}
 }

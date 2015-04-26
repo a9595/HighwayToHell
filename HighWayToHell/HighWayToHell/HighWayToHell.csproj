@@ -121,6 +121,14 @@
       <DependentUpon>EFModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ConnectionStringEF.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.ContextEntityFramework.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.grade.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.group.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.student.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.subject.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.teacher.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.teacher_groups.datasource" />
     <None Include="Properties\DataSources\grade.datasource" />
     <None Include="Properties\DataSources\group.datasource" />
     <None Include="Properties\DataSources\student.datasource" />
@@ -154,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFrameworkDAL\EntityFrameworkDAL.csproj">
+      <Project>{48865cba-4b43-4e98-8aed-b43a5ee6dd86}</Project>
+      <Name>EntityFrameworkDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.22609.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighWayToHell", "HighWayToHell\HighWayToHell.csproj", "{8D4AA8FA-D360-43FB-BD19-A5EC34C1C42F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDAL", "EntityFrameworkDAL\EntityFrameworkDAL.csproj", "{48865CBA-4B43-4E98-8AED-B43A5EE6DD86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8D4AA8FA-D360-43FB-BD19-A5EC34C1C42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D4AA8FA-D360-43FB-BD19-A5EC34C1C42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D4AA8FA-D360-43FB-BD19-A5EC34C1C42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48865CBA-4B43-4E98-8AED-B43A5EE6DD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48865CBA-4B43-4E98-8AED-B43A5EE6DD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48865CBA-4B43-4E98-8AED-B43A5EE6DD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48865CBA-4B43-4E98-8AED-B43A5EE6DD86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
