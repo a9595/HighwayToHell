@@ -40,12 +40,17 @@ namespace HighWayToHell
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-//			//((DbSet)_contextEntityFramework.student).Load();
-//			BindingSource bi = new BindingSource();
-//			bi.DataSource = _contextEntityFramework.student.ToList();
-//			DALdataGridView2.DataSource = bi;
 
 			studentBindingSource.DataSource = _contextEntityFramework.student.ToList();
+			DataGridViewComboBoxColumn groupComboColumn = new DataGridViewComboBoxColumn
+			{
+				DataSource = _contextEntityFramework.@group.ToList(),
+				ValueMember = "id",
+				Name = "group name",
+				DisplayMember = "name",
+				DataPropertyName = "id"
+			};
+			studentDataGridView.Columns.Add(groupComboColumn);
 		}
 	}
 }
