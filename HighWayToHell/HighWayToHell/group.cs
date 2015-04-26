@@ -28,10 +28,5 @@ namespace HighWayToHell
         public virtual ICollection<student> student { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<teacher_groups> teacher_groups { get; set; }
-
-	    public override string ToString()
-	    {
-		    return this.name;
-	    }
     }
 }

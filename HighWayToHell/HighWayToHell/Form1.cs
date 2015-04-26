@@ -19,6 +19,14 @@ namespace HighWayToHell
 			StudentsGridView.AutoGenerateColumns = false;
 			StudentsGridView.DataSource = context.student.ToList();
 			
+			DataGridViewComboBoxColumn comboColumn = new DataGridViewComboBoxColumn();
+			comboColumn.DataSource = context.group.ToList();
+			comboColumn.ValueMember = "id";
+			comboColumn.Name = "group name";
+			comboColumn.DisplayMember = "name";
+			comboColumn.DataPropertyName = "id";
+			StudentsGridView.Columns.Add(comboColumn);
+
 		}
 	}
 }

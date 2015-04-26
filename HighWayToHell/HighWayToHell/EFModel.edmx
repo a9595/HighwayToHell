@@ -64,7 +64,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="teacher_id" Type="int" Nullable="false" />
           <Property Name="subject_id" Type="int" Nullable="false" />
-          <Property Name="group_id" Type="int" Nullable="false" />
+          <Property Name="group_id" Type="int" Nullable="false" StoreGeneratedPattern="None" />
         </EntityType>
         <Association Name="FK_student_group">
           <End Role="group" Type="Self.group" Multiplicity="0..1">
@@ -222,7 +222,7 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="teacher_id" Type="Int32" Nullable="false" />
           <Property Name="subject_id" Type="Int32" Nullable="false" />
-          <Property Name="group_id" Type="Int32" Nullable="false" />
+          <Property Name="group_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <NavigationProperty Name="group" Relationship="Self.FK_teacher_groups_group" FromRole="teacher_groups" ToRole="group" />
           <NavigationProperty Name="subject" Relationship="Self.FK_teacher_groups_subject" FromRole="teacher_groups" ToRole="subject" />
           <NavigationProperty Name="teacher" Relationship="Self.FK_teacher_groups_teacher" FromRole="teacher_groups" ToRole="teacher" />
